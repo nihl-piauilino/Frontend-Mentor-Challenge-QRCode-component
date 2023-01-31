@@ -9,7 +9,7 @@
 body {
     background-color: hsl(212, 45%, 89%);
     font-family: 'Outfit', sans-serif;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 img {
@@ -18,11 +18,11 @@ img {
     max-width: 100%;
 }
 
-span {
+h1, span {
     text-align: center;
 }
 
-.attribution {
+footer {
     font-size: 11px;
     display: flex;
     flex-direction: column;
@@ -32,13 +32,13 @@ span {
     left: calc(50% - 100px);
 }
 
-.attribution a {
+footer a {
     color: hsl(228, 45%, 44%);
 }
 
-.bold-text {
+h1 {
     color: hsl(218, 44%, 22%);
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -47,24 +47,25 @@ span {
     font-weight: 400;
 }
 
-.main {
+main {
     background-color: hsl(0, 0%, 100%);
     border-radius: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 1em;
     position: absolute;
-    left: calc(50% - 144px);
-    top: 20%;
-    width: 288px;
+    left: calc(50% - 10vw);
+    top: calc(50% - 30vh);
+    height: 60vh;
+    width: 20vw;
 }
 
-.main span {
-    margin: 0.5em
-}
-
-@media screen and (max-width: 1440px) {
-    .main {
-        top: 10%;
+@media screen and (max-width: 768px) {
+    main {
+        left: calc(50% - 40vw);
+        top: calc(50% - 35vh);
+        height: 70vh;
+        width: 80vw;
     }
 }
